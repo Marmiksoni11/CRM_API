@@ -11,7 +11,7 @@ const auth = require("../middleware/authentication");
 
 router.route('/register').post(createUser)
 router.route('/token').post(getToken)
-router.route('/user/login').post(loginUser)
+router.route('/login').post(loginUser)
 router.route('/logout').put(logoutUser)
 
 // Authenticate All routes other then Authentication system routes above
