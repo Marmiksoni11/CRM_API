@@ -1,0 +1,53 @@
+GET http://localhost:5000/api/v1/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJDaGludGFuIiwiaWF0IjoxNzIyNzc2MzE3LCJleHAiOjE3MjI3NzYzMzd9.cUNvAsxg8DpjbQd_uYQHSI_iQe8_9K1QqnXG3N1pBUI
+
+### 
+
+POST http://localhost:5000/api/v1/user/login
+content-type: application/json
+// below token is useless and only for Request client Extension
+Authorization: Bearer sdfdsfsdfsdfsdf.wqewed333asffasf.asass
+
+{
+    "email": "chintan_crm@yopmail.com",
+    "password": "Chintan"
+}
+
+### 
+
+// Get Token
+POST http://localhost:5000/api/v1/token
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJDaGludGFuIiwiaWF0IjoxNzIyNzc2MjU1fQ._ddD7E3IoKb6c8Pu0kma0sGaSErKGBuuvLbi5dWkivs
+
+{
+    "id": 4,
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJDaGludGFuIiwiaWF0IjoxNzIyNzczNzQ2fQ.nh4wuCwOSgp41Lb-Lm-6FjmLvblZOaEn3nHNzUNOfT4"
+}
+
+### 
+
+// Logout
+POST http://localhost:5000/api/v1/logout
+content-type: application/json
+Authorization: Bearer sdfsdf.sfdfsdfsdf.sdfsdf
+
+{
+    "id": 4,
+}
+
+### 
+
+// Register
+POST http://localhost:5000/api/v1/register
+content-type: application/json
+Authorization: Bearer sdfdsfsdfsdfsdf.wqewed333asffasf.asass
+
+{
+    "username": "Chintan",
+    "first_name": "Chintan",
+    "last_name": "Timbadiya",
+    "email": "chintan_crm@yopmail.com",
+    "password": "Chintan",
+    "number":1234678124
+}

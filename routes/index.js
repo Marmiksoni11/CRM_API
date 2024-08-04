@@ -1,8 +1,22 @@
 const express = require('express');
 const router = express.Router();
-const userRoutes = require('../users');
+const userRoutes = require('../user');
+const {
+    createUser,
+    loginUser,
+    logoutUser,
+    getToken
+} = require('../user/controller');
+const auth = require("../middleware/authentication");
 
-// Use individual route modules
+router.route('/register').post(createUser)
+router.route('/token').post(getToken)
+router.route('/user/login').post(loginUser)
+router.route('/logout').put(logoutUser)
+
+// Authenticate All routes other then Authentication system routes above
+router.use(auth)
+
 router.use(userRoutes);
 
 module.exports = router;

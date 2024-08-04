@@ -3,6 +3,10 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../db/connect');
 
 const User = sequelize.define('users', {
+  username: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   first_name: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -14,7 +18,13 @@ const User = sequelize.define('users', {
   email: {
     type: DataTypes.STRING,
   },
+  password: {
+    type: DataTypes.STRING,
+  },
   number: {
+    type: DataTypes.STRING,
+  },
+  refresh_token: {
     type: DataTypes.STRING,
   },
 },
