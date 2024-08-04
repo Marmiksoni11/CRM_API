@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const userRoutes = require('../user');
+const userRoutes = require('../modules/user/index');
 const {
     createUser,
     loginUser,
     logoutUser,
     getToken
-} = require('../user/controller');
+} = require('../modules/user/controller');
 const auth = require("../middleware/authentication");
 
 router.route('/register').post(createUser)

@@ -1,5 +1,5 @@
 GET http://localhost:5000/api/v1/user
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJDaGludGFuIiwiaWF0IjoxNzIyNzc2MzE3LCJleHAiOjE3MjI3NzYzMzd9.cUNvAsxg8DpjbQd_uYQHSI_iQe8_9K1QqnXG3N1pBUI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJDaGludGFuIiwiaWF0IjoxNzIyNzc3NzI2LCJleHAiOjE3MjI3Nzc3NDZ9.xO0XRpJPFVrAnxluIJEeFObCYdSSnu_TBL4qo1HOzcc
 
 ### 
 
@@ -18,7 +18,7 @@ Authorization: Bearer sdfdsfsdfsdfsdf.wqewed333asffasf.asass
 // Get Token
 POST http://localhost:5000/api/v1/token
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJDaGludGFuIiwiaWF0IjoxNzIyNzc2MjU1fQ._ddD7E3IoKb6c8Pu0kma0sGaSErKGBuuvLbi5dWkivs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJDaGludGFuIiwiaWF0IjoxNzIyNzc3Njk3fQ.Nk69IR4V-bFYesPZN9HGSjQInWF38PxWQ_qknhRdHoU
 
 {
     "id": 4,

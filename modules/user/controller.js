@@ -3,8 +3,8 @@ const JWT = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const { StatusCodes } = require("http-status-codes");
 const User = require("./models");
-const { BadRequestError, NotFoundError } = require("../errors");
-const { getHashedPassword, generateToken } = require("../utils");
+const { BadRequestError, NotFoundError } = require("../../errors");
+const { getHashedPassword, generateToken } = require("../../utils");
 const { where } = require("sequelize");
 
 const getUser = async (req, res) => {
